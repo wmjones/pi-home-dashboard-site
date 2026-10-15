@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pi Home Dashboard</title>
+<style>
+:root { --bg: #ffffff; --fg: #1c1d21; --muted: #5b5f6a; --link: #1d4ed8; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121110; --fg: #f2efea; --muted: #a8a29a; --link: #8ab4f8; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
+p.lead { color: var(--muted); margin-top: 0; }
+a { color: var(--link); }
+footer { margin-top: 48px; font-size: 15px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Pi Home Dashboard</h1>
+<p class="lead">A personal, wall-mounted touch screen for one household, running on a Raspberry Pi.</p>
+
+<p>The dashboard shows the household's calendar, the weather, to-do lists and chores, and the music that is currently playing. It runs on a Raspberry Pi on the owner's home network and is used only by the people who live there.</p>
+
+<h2>What it connects to</h2>
+<ul>
+<li><strong>Google Calendar</strong> (read-only): to show today's and this week's events.</li>
+<li><strong>Spotify</strong>: to show what is playing and offer play, pause and skip.</li>
+<li><strong>Todoist</strong>: to show and check off tasks and chores.</li>
+<li><strong>Open-Meteo</strong>: for the local weather forecast.</li>
+</ul>
+
+<p>This is not a commercial product and is not offered to the public. See the <a href="privacy.html">privacy policy</a> for how data is handled.</p>
+
+<footer><a href="privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>

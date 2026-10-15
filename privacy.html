@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Pi Home Dashboard</title>
+<style>
+:root { --bg: #ffffff; --fg: #1c1d21; --muted: #5b5f6a; --link: #1d4ed8; }
+@media (prefers-color-scheme: dark) { :root { --bg: #121110; --fg: #f2efea; --muted: #a8a29a; --link: #8ab4f8; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
+p.lead { color: var(--muted); margin-top: 0; }
+a { color: var(--link); }
+footer { margin-top: 48px; font-size: 15px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="lead">Pi Home Dashboard · Last updated October 15, 2026</p>
+
+<p>Pi Home Dashboard is a personal application used by a single household on its own Raspberry Pi. It is not offered to the public, has no user accounts of its own, and does not collect data from anyone outside the household.</p>
+
+<h2>Data the app accesses</h2>
+<ul>
+<li><strong>Google Calendar</strong>: read-only access to the signed-in user's calendar events (titles, times, locations), used only to display them on the dashboard.</li>
+<li><strong>Spotify</strong>: the current playback state (track or episode, artist, progress, device), used to display it and to send play, pause and skip commands the user taps.</li>
+<li><strong>Todoist</strong>: the user's tasks and projects, used to display them and to mark tasks complete when the user taps them.</li>
+</ul>
+
+<h2>How data is stored and shared</h2>
+<ul>
+<li>Data is fetched directly from each service by software running on the household's Raspberry Pi and is held only in that device's memory and local cache.</li>
+<li>Sign-in tokens are stored in a local file on that device and are never sent anywhere except to the service they belong to.</li>
+<li>No data is sold, shared with third parties, used for advertising, or used to train machine-learning models.</li>
+<li>The app has no analytics or tracking.</li>
+</ul>
+
+<h2>Google user data</h2>
+<p>Pi Home Dashboard's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Removing access</h2>
+<p>Access can be revoked at any time from your <a href="https://myaccount.google.com/permissions">Google Account permissions</a>, <a href="https://www.spotify.com/account/apps/">Spotify account apps page</a>, or Todoist's integration settings. Deleting the dashboard's local files removes all stored tokens and cached data.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy can be raised as an issue on <a href="https://github.com/wmjones/pi-home-dashboard-site/issues">this site's GitHub repository</a>.</p>
+
+<footer><a href="index.html">Home</a></footer>
+</main>
+</body>
+</html>
